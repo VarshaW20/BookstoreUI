@@ -6,3 +6,5 @@ service BookService @(requires: 'authenticated-user', path: '/BookService') {
 entity Authors as projection on db.Authors;
 entity Books as select ID, title, rating, cost, author from db.Books;
 }
+
+//Test changes
